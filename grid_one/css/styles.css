@@ -1,0 +1,114 @@
+:root {
+    --colorOne: #d5ecf4;
+    --colorTwo: #e5efd9;
+    --colorThree: #fcf8c0;
+    --colorFour: #ebebeb;
+    --colorFive: #f4c5c3;
+    --colorSix: #e5efd8;
+    --colorSeven: #fcf8c0;
+  }
+  
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height: 300vh;
+}
+ul{
+    list-style: none;
+}
+.header{
+    display: flex;
+}
+.list{
+    padding:1rem;
+    margin:1rem;
+    margin:0 auto;
+}
+.list>li{
+    margin: 0.3rem;
+}
+
+.main_grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main_grid .img_box{
+    background-size: cover;
+    background-position: center center;
+    margin: 0.4rem;
+}
+
+.main_grid .img_box:first-child{
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/06/21/44/rose-4825575_1280.jpg);
+    grid-row: span 2;
+}
+.img_box:nth-child(2){
+    background-image: url(https://cdn.pixabay.com/photo/2019/02/22/10/26/swan-4013225_1280.jpg);
+    grid-area: span 2/ span 2;
+}
+.img_box:nth-child(3){
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/10/11/56/watercolour-4116932_1280.png);
+}
+.img_box:nth-child(4){
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017_1280.png);
+    grid-row: span 2;
+}
+.img_box:nth-child(5){
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/12/20/41/sunflower-4843834_1280.jpg);
+
+}
+.img_box:nth-child(6){
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/10/22/10/greater-rhea-4837821_1280.jpg);
+
+}
+.img_box:nth-child(7){
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/13/04/10/landscape-4844410_1280.jpg);
+}
+.img_box:nth-child(8){
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/15/10/02/nature-4850504_960_720.jpg);
+    grid-area: span 2/ span 2;
+}
+.img_box:nth-child(9){
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/26/17/47/color-4158152_1280.jpg);
+    grid-row: span 2;
+}
+.img_box:nth-child(10){
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283_1280.jpg);
+    grid-area: span 2/ span 2;
+}
+
+.img_box:nth-child(11){
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/13/07/14/heart-4844741_1280.jpg);
+}
+
+.img_box:nth-child(12){
+background-image: url(https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_1280.jpg);
+}
+.img_box:nth-child(13){
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/08/18/00/antelope-canyon-1128815_1280.jpg);
+    grid-area: span 2/ span 2;
+}
+.img_box:nth-child(14){
+background-image: url(https://cdn.pixabay.com/photo/2017/08/15/12/04/together-2643652_960_720.jpg);
+}
+.img_box:last-child{
+background-image: url(https://cdn.pixabay.com/photo/2015/07/30/17/24/audience-868074_1280.jpg);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 0.7rem;
+}
+.footer_list{
+    margin: 2rem;
+}
+.footer_list:last-child{
+    margin-left: 10rem;
+}
