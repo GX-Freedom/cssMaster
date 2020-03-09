@@ -3,8 +3,105 @@
     padding:0;
 }
 .grid_box{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    margin: 3rem;
+
+}
+.header>i{
+    margin-right: 1rem;
+}
+.main_box{
     display: grid;
+    height: 30rem;
+    grid-auto-columns: repeat(auto-fill, minmax(min-content, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+    grid-auto-flow: column;
+    overflow-x: auto;
+    align-items: center;
+    margin: 2rem 0 4rem 2rem;
 }
 .item{
-    background-color: red;
+    display: grid;
+    border:1px solid red;
+    margin: 1rem;
+    width: 160px;
+    text-align: center;
+    align-items: center;
+    box-shadow: -1px 18px 20px -4px rgba(0,0,0,0.75);
+}
+.item_title{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.item_text{
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+
+}
+.nav_box{
+    display: flex;
+    border: 1px solid red;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.nav_box>.nav_span_box{
+    justify-content: space-between;
+    font-weight: 800;
+    opacity: 0.7;
+}
+.item>.item_img{
+    width: 160px;
+    height: 190px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item:hover{
+    transform: scale(1.2);
+}
+.item:first-child>.item_img{
+    width: 160px;
+    height: 190px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/05/08/43/star-4903819__340.jpg");
+}
+
+.item:nth-child(2)>.item_img{
+    width: 160px;
+    height: 190px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/01/08/18/50/clouds-4750959__340.jpg");
+}
+
+.item:nth-child(3)>.item_img{
+    width: 160px;
+    height: 190px;
+    background-image: url("https://cdn.pixabay.com/photo/2019/03/26/04/30/influencer-4081842__340.jpg");
+}
+
+.item:nth-child(4)>.item_img{
+    width: 160px;
+    height: 190px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/02/28/16/52/plumeria-4887944__340.jpg");
+}
+
+.item:nth-child(5)>.item_img{
+    width: 160px;
+    height: 190px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/01/15/30/fox-4893199__340.jpg");
+}
+
+.item:nth-child(6)>.item_img{
+    width: 160px;
+    height: 190px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/02/17/31/cherry-blossom-4896350__340.jpg");
 }
