@@ -5,3 +5,6 @@
 .grid_box{
     display: grid;
 }
+.item{
+    background-color: red;
+}
